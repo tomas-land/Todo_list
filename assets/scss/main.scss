@@ -1,0 +1,141 @@
+// UTILITIES
+@import "utilities/_normalize.scss";
+@import "utilities/_variables.scss";
+@import "utilities/_mixins.scss";
+
+// PAGES
+@import "pages/_home.scss";
+
+// LAYOUT
+@import "layout/_header.scss";
+@import "layout/_footer.scss";
+
+// COMPONENTS
+@import "components/_card.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@100;300;400;500;600;700;800;900&family=Racing+Sans+One&display=swap");
+body {
+  font-family: "Racing Sans One", cursive;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    29deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(74, 217, 143, 1) 91%
+  );
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+.container {
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+  margin: 100px auto ;
+  padding-bottom: 80px;
+  max-width: 600px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    199deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(74, 217, 143, 1) 91%
+  );
+  border-radius: 2rem;
+  span {
+    font-size: 4rem;
+    color: rgb(62, 170, 147);
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin-right: 180px;
+  }
+  hr {
+    background-color: rgb(25, 80, 80);
+    border: none;
+    height: 3px;
+    width: 80%;
+    margin: 20px auto;
+  }
+}
+.box {
+  margin: auto;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+  h1 {
+    color: rgb(36, 59, 59);
+    margin-left: 10px;
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+  }
+}
+.addBox {
+  display: flex;
+
+  &__input {
+    background-color: rgb(179, 250, 217);
+    border-radius: 10px 0px 0px 10px;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    outline: none;
+    border: none;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3rem;
+    background-color: rgb(66, 168, 105);
+    outline: none;
+    border: none;
+    cursor: pointer;
+    i {
+      pointer-events: none;
+      color: rgb(245, 248, 245);
+    }
+  }
+}
+
+#todo_list {
+  margin: 0;
+  padding: 0;
+}
+.todo_div {
+  display: flex;
+  margin-top: 15px;
+}
+.todo_list_item {
+  overflow: hidden;
+  width: 100%;
+  list-style: none;
+  background-color: rgb(179, 250, 217);
+  border-radius: 10px 0px 0px 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+
+  padding: 0.5rem;
+  font-size: 1.3rem;
+  outline: none;
+  border: none;
+}
+.btn {
+  width: 3rem;
+  padding: 0.5rem;
+  background-color: rgb(66, 168, 105);
+  outline: none;
+  border: none;
+  cursor: pointer;
+
+  i {
+    pointer-events: none;
+    color: rgb(245, 248, 245);
+    cursor: pointer;
+  }
+}
+.trash_btn {
+  background-color: rgb(151, 72, 72);
+}
+.edit_btn{
+    background-color: rgb(3, 76, 109);
+}
